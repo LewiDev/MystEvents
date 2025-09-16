@@ -1,0 +1,32 @@
+{
+  "name": "myst-events-bot",
+  "version": "1.0.0",
+  "description": "Discord bot for hosting events in MystEvents server",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "watch": "tsc --watch",
+    "update-hint": "node updateStage5Hint.js"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "events",
+    "typescript"
+  ],
+  "author": "MystEvents",
+  "license": "MIT",
+  "dependencies": {
+    "@napi-rs/canvas": "^0.1.78",
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.3.1",
+    "mongoose": "^8.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
